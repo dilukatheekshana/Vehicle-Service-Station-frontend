@@ -1,0 +1,86 @@
+.vehicle-owner-navbar {
+    box-shadow: none;
+    border-radius: 99px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1500px;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    transform: translateX(-10%);
+}
+
+.vehicle-owner-toolbar {
+    position: relative;
+    max-height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vehicle-owner-logo {
+    height: 100px;
+    min-width: 150px;
+    margin-left: -10rem;
+    margin-top: 0%;
+}
+
+.vehicle-owner-menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 130px;
+}
+
+.vehicle-owner-menu-item {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.vehicle-owner-menu-item:hover {
+    color: #007bff;
+}
+
+.logout-icon {
+    display: flex;
+    align-items: center;
+    margin-right: -300px;
+}
+
+
+@media (max-width: 480px) {
+    .vehicle-owner-navbar {
+        margin-top: 10px;
+        max-width: 90%;
+        width: 100%;
+        position: fixed;
+        margin-right: -4%;
+    }
+
+    .vehicle-owner-toolbar {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .vehicle-owner-menu {
+        display: none;
+    }
+
+    .logout-icon {
+        margin-right: 0;
+    }
+
+    .vehicle-owner-menu-item {
+        font-size: 0.875rem;        
+    }
+
+    .vehicle-owner-search {
+        width: 100%;
+    }
+
+    .search-input-root {
+        width: 100%;
+    }
+}

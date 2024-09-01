@@ -1,0 +1,151 @@
+.aboutus {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(236, 233, 230, 0.4), rgba(255, 255, 255, 0)), url('../../assets/pic5.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.about-us-container {
+  max-width: 1500px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-heading h1 {
+  text-align: center;
+  color: #001529;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-us-image-container {
+  flex: 1;
+  max-width: 750px;
+  max-height: 500px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.about-us-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #E94100;
+}
+
+.about-us-description {
+  flex: 1;
+  text-align: justify;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.read-more-dis-button {
+  margin-top: -5rem;
+  margin-left: 8rem;
+}
+
+.ant-modal {
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 40%;
+  width: 100%;
+  height: 100%;
+}
+
+.ant-modal-header {
+  background: #001529;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.ant-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ant-modal-body {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  text-align: justify;
+  font-size: 60%;
+}
+
+@media (max-width: 480px) {
+  .about-us-container {
+    padding: 20px;
+    
+  }
+
+  .about-us-heading h1 {
+    font-size: 32px;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    min-height: 750px;
+  }
+
+  .about-us-description {
+    font-size: 16px;
+  }
+
+  .about-us-image-container {
+    margin-right: 0;
+    margin-bottom: 50px;
+    max-width: 320px; 
+    max-height: 200px; 
+  }
+
+  .read-more-dis-button{
+    margin-left: 0;
+  }
+}

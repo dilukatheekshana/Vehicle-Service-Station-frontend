@@ -1,0 +1,68 @@
+.Guest-Packages-container {
+    max-width: 1500px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .Guest-Packages-heading {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Guest-Packages-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+    min-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .Guest-Packages-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Guest-Packages-card-media {
+    min-height: 450px;
+    min-width: 100%;
+    object-fit: cover;
+    gap: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .Guest-Packages-card-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .Guest-Packages-card-description {
+    color: #555;
+  }
+  
+  .Guest-Packages-card-price {
+    color: #1a237e;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    .Guest-Packages-container {
+      background-color: #001529;
+      margin-bottom: -10px;
+      margin-top: -10px;
+    }
+  
+    .Guest-Packages-heading {
+      color: #fff;
+    }
+  }
+  

@@ -1,0 +1,13 @@
+.contactus-header-container{
+    height: 70vh;
+    background-image: url('../../assets/ContactUs1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+    .contactus-header-container {
+        height: 50vh;
+        background-position: center;
+    }
+}
